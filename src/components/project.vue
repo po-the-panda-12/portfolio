@@ -17,7 +17,7 @@
             <div class="card-body">
               <h5 class="card-title">{{project.title}}</h5>
               <p class="card-text">{{project.summary}}</p>
-              <a :href=[project.link] target="_blank" class="btn btn-outline-secondary" id="githubButton" rel="noopener noreferrer">
+              <a :href=[project.link] target="_blank" class="btn btn-outline-secondary shadow-none" id="githubButton" rel="noopener noreferrer">
                 <i class="fa-brands fa-github" aria-hidden="true"></i>
                 Github</a>
             </div>

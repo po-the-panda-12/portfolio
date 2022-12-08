@@ -17,7 +17,7 @@
 
       </div>
 
-        <a href = "src/assets/CV.pdf"
+        <a href = "src/assets/CV.pdf" target="_blank"
         class = "btn btn-primary mt-2" download = "Shambhavi Goenka.pdf">
         <i class="fa-solid fa-download"></i>
         Downoad</a>

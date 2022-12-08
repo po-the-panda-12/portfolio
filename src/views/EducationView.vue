@@ -224,11 +224,11 @@ body {
     z-index: 1;
     padding-left: 180px;
 }
-/* @media only screen and (max-width: 575px) {
+@media only screen and (max-width: 575px) {
     .single-timeline-area {
         padding-left: 100px;
     }
-} */
+}
 .single-timeline-area .timeline-date {
     position: absolute;
     width: 180px;
@@ -248,11 +248,11 @@ body {
     justify-content: flex-end;
     padding-right: 60px;
 }
-/* @media only screen and (max-width: 575px) {
+@media only screen and (max-width: 575px) {
     .single-timeline-area .timeline-date {
         width: 100px;
     }
-} */
+}
 
 /* timeline line */
 .single-timeline-area .timeline-date::after {
@@ -365,8 +365,8 @@ h6 {
     data() {
       return {
         educationList: [
-          {name: "Singapore Management University", tenure: "2019-2023", image:"../src/assets/smuLogo.jpeg", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
-          {name: "La Martiniere for Girls, Kolkata", tenure: "2004-2019", image:"../src/assets/lmgLogo.jpeg", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
+          {name: "Singapore Management University", tenure: "2019-2023", image:"../src/assets/smuLogo.jpg", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
+          {name: "La Martiniere for Girls, Kolkata", tenure: "2004-2019", image:"../src/assets/lmgLogo.jpg", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
         ],
 
         languageList: [
@@ -401,6 +401,9 @@ h6 {
             divList[i].style.backgroundColor = "#B4B4DA";
           }
         }
+
+
+        let width = screen.width;
 
 
     }
