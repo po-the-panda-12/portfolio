@@ -402,10 +402,32 @@ h6 {
           }
         }
 
+        this.widthAdjust(event);
+        window.addEventListener("resize", this.widthAdjust);
 
+
+    },
+
+    methods: {
+
+      widthAdjust () {
         let width = screen.width;
+        var area = document.getElementsByClassName("single-timeline-area");
+        var date = document.getElementsByClassName("timeline-date");
 
-
+        if(width < 575) {
+          for (let i = 0; i < area.length; i++) {
+            area[i].style.paddingLeft = 0;
+            date[i].style.width = 0;
+          }
+        }
+        else {
+          for (let i = 0; i < area.length; i++) {
+            area[i].style.paddingLeft = "180px";
+            date[i].style.width = "180px";
+          }
+        }
+      }
     }
   }
 </script>
