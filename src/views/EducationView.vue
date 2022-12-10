@@ -7,156 +7,64 @@
 
         <section class="timeline_area section_padding_130">
           <div class="container px-0">
-              <div class="row justify-content-center">
-                  <div class="col-12 col-sm-8 col-lg-6">
-                      <!-- Section Heading-->
-                      <div class="section_heading text-center">
-                          <!-- <h6>Our History</h6>
-                          <h3>A brief stories of our 2 years company journey</h3> -->
-                          <div class="line"></div>
-                      </div>
-                  </div>
-              </div>
               <div class="row">
                   <div class="col-12">
                       <!-- Timeline Area-->
                       <div class="apland-timeline-area">
-                        <div v-for='school in educationList'>
+
+
                           <div class="single-timeline-area">
-                            <!-- <div v-if="index%2==0"> -->
                             <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                                <p>{{school.tenure}}</p>
+                                <p>2019-2023</p>
                             </div>
                             <div class="row">
                                 <div class="col">
                                     <div class="single-timeline-content wow fadeInLeft" data-wow-delay="0.3s"
-                                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    style="visibility: visible; animation-delay: 0.3s; background-color:#B4DAB4; animation-name: fadeInLeft;">
                                         <div class="timeline-icon" style="background-size: cover;" aria-hidden="true">
-                                          <img :src=[school.image] alt="logo" class="timeline-icon">
-                                          <!-- <img src="@/assets/smuLogo.jpg" alt="logo" class="timeline-icon"> -->
-                                          <!-- <i class="fa fa-id-card" aria-hidden="true"></i> -->
-                                        </div>
+                                          <img src="@/assets/smuLogo.jpg" alt="logo" class="timeline-icon"></div>
                                         <div class="timeline-text">
-                                            <h6 class="my-2">{{school.name}}</h6>
-                                            <p>{{school.body}}</p>
+                                            <h6 class="my-2">Singapore Management University</h6>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                         </div>
                                     </div>
                                 </div>
                               </div>
-                            <!-- </div> -->
 
                           </div>
-                        </div>
 
-                                <!-- Single Timeline Content
-                                <div class="single-timeline-area">
-                                    <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                                        <p>2020</p>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 col-md-6 col-lg-4">
-                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                                <div class="timeline-icon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
-                                                <div class="timeline-text">
-                                                    <h6>Updated 5.0</h6>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6 col-lg-4">
-                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
-                                                <div class="timeline-icon"><i class="fa fa-archive" aria-hidden="true"></i></div>
-                                                <div class="timeline-text">
-                                                    <h6>Fixed bug</h6>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6 col-lg-4">
-                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                                <div class="timeline-icon"><i class="fa fa-address-book" aria-hidden="true"></i></div>
-                                                <div class="timeline-text">
-                                                    <h6>Reach 1k Users</h6>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                                </div>
-                                            </div>
+
+                          <div class="single-timeline-area">
+                            <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                <p>2003-2019</p>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="single-timeline-content wow fadeInLeft" data-wow-delay="0.3s"
+                                    style="visibility: visible; animation-delay: 0.3s; background-color:#B4B4DA; animation-name: fadeInLeft;">
+                                        <div class="timeline-icon" style="background-size: cover;" aria-hidden="true">
+                                          <img src="@/assets/lmgLogo.jpg" alt="logo" class="timeline-icon"></div>
+                                        <div class="timeline-text">
+                                            <h6 class="my-2">La Martiniere for Girls, Kolkata</h6>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                         </div>
                                     </div>
                                 </div>
-                                Single Timeline Content
-                                <div class="single-timeline-area">
-                                    <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                                        <p>2020</p>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 col-md-6 col-lg-4">
-                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                                <div class="timeline-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
-                                                <div class="timeline-text">
-                                                    <h6>Updated 4.4.0</h6>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6 col-lg-4">
-                                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
-                                                <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
-                                                <div class="timeline-text">
-                                                    <h6>Fixed bug</h6>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                Single Timeline Content
-                                <div class="single-timeline-area">
-                              <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                                  <p>2019</p>
                               </div>
-                              <div class="row">
-                                  <div class="col-12 col-md-6 col-lg-4">
-                                      <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                          <div class="timeline-icon"><i class="fa fa-id-card" aria-hidden="true"></i></div>
-                                          <div class="timeline-text">
-                                              <h6>Updated 4.0</h6>
-                                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-12 col-md-6 col-lg-4">
-                                      <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
-                                          <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
-                                          <div class="timeline-text">
-                                              <h6>Fixed bug</h6>
-                                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-12 col-md-6 col-lg-4">
-                                      <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                          <div class="timeline-icon"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
-                                          <div class="timeline-text">
-                                              <h6>Reach 500 Users</h6>
-                                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div> -->
+
+                          </div>
+
                       </div>
                   </div>
               </div>
           </div>
         </section>
 
-
-
-
         <br/><br/>
-
       </div>
     </div>
+
+
     <div class="skillsBody">
       <div class="w-75 p-3 mx-auto">
         <h2 class="mt-3">Languages</h2>
@@ -295,9 +203,6 @@ body {
     border-radius: 6px;
     margin-bottom: 15px;
     margin-top: 15px;
-    /* -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
-    box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
-    border: 1px solid red; */
 }
 @media only screen and (max-width: 575px) {
     .single-timeline-area .single-timeline-content {
@@ -336,16 +241,6 @@ body {
   box-shadow: 0 0.25rem 1rem 0 rgba(100, 100, 100, 0.125);
 }
 
-/* .single-timeline-area .single-timeline-content:hover .timeline-icon,
-.single-timeline-area .single-timeline-content:focus .timeline-icon {
-    background-color: #020710;
-}
-.single-timeline-area .single-timeline-content:hover .timeline-text h6,
-.single-timeline-area .single-timeline-content:focus .timeline-text h6 {
-    color: #3f43fd;
-} */
-
-
 
 h6 {
   font-family: 'opensans-regular', sans-serif;
@@ -366,10 +261,6 @@ h6 {
 
     data() {
       return {
-        educationList: [
-          {name: "Singapore Management University", tenure: "2019-2023", image:"@/assets/Profile.jpg", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
-          {name: "La Martiniere for Girls, Kolkata", tenure: "2004-2019", image:"@/assets/lmgLogo.jpg", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
-        ],
 
         languageList: [
           {name: "Python", rating: "5"},
@@ -387,26 +278,8 @@ h6 {
 
     mounted() {
 
-        // const langTab = document.getElementsByClassName("languageTable");
-        // console.log(langTab);
-
-        const divList = document.getElementsByClassName("single-timeline-content");
-        for (let i = 0; i < divList.length; i++) {
-
-          // var icon = divList[i].getElementsByClassName("timeline-icon")[0];
-          // icon.style.backgroundImage = 'url('+this.educationList[i].image+')';
-
-          if(i%2==0){
-            divList[i].style.backgroundColor = "#B4DAB4";
-          }
-          else {
-            divList[i].style.backgroundColor = "#B4B4DA";
-          }
-        }
-
         this.widthAdjust(event);
         window.addEventListener("resize", this.widthAdjust);
-
 
     },
 

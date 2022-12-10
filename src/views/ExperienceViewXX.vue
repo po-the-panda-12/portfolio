@@ -1,79 +1,46 @@
 <template>
   <div>
-    <div class="educationBody">
+    <div class="experienceBody">
       <div class="w-75 p-3 mx-auto">
         <h2 class="mt-3">Experiences</h2>
         <hr>
 
         <section class="timeline_area section_padding_130">
           <div class="container px-0">
+              <div class="row justify-content-center">
+                  <div class="col-12 col-sm-8 col-lg-6">
+                      <!-- Section Heading-->
+                      <div class="section_heading text-center">
+                          <div class="line"></div>
+                      </div>
+                  </div>
+              </div>
               <div class="row">
                   <div class="col-12">
                       <!-- Timeline Area-->
                       <div class="apland-timeline-area">
-
-
+                        <div v-for='school in experienceList'>
                           <div class="single-timeline-area">
                             <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                                <p>2019-2023</p>
+                                <p>{{school.tenure}}</p>
                             </div>
                             <div class="row">
                                 <div class="col">
                                     <div class="single-timeline-content wow fadeInLeft" data-wow-delay="0.3s"
-                                    style="visibility: visible; animation-delay: 0.3s; background-color:#CFD2CF; animation-name: fadeInLeft;">
+                                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                                         <div class="timeline-icon" style="background-size: cover;" aria-hidden="true">
-                                          <img src="@/assets/smuLogo.jpg" alt="logo" class="timeline-icon"></div>
+
+                                        </div>
                                         <div class="timeline-text">
-                                            <h6 class="my-2">Singapore Management University - Main QC</h6>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <h6 class="my-2">{{school.name}}</h6>
+                                            <p>{{school.body}}</p>
                                         </div>
                                     </div>
                                 </div>
                               </div>
-
                           </div>
+                        </div>
 
-
-                          <div class="single-timeline-area">
-                            <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                                <p>2018-2019</p>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="single-timeline-content wow fadeInLeft" data-wow-delay="0.3s"
-                                    style="visibility: visible; animation-delay: 0.3s; background-color:#F5EDDC; animation-name: fadeInLeft;">
-                                        <div class="timeline-icon" style="background-size: cover;" aria-hidden="true">
-                                          <img src="@/assets/icompaasLogo.jpg" alt="logo" class="timeline-icon"></div>
-                                        <div class="timeline-text">
-                                            <h6 class="my-2">iCompaas - Cyber Sec</h6>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-
-                          </div>
-
-
-                          <div class="single-timeline-area">
-                            <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                                <p>2017-2018</p>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="single-timeline-content wow fadeInLeft" data-wow-delay="0.3s"
-                                    style="visibility: visible; animation-delay: 0.3s; background-color:#CFD2CF; animation-name: fadeInLeft;">
-                                        <div class="timeline-icon" style="background-size: cover;" aria-hidden="true">
-                                          <img src="@/assets/biaLogo.jpg" alt="logo" class="timeline-icon"></div>
-                                        <div class="timeline-text">
-                                            <h6 class="my-2">BIA - DAP</h6>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-
-                          </div>
 
                       </div>
                   </div>
@@ -81,10 +48,13 @@
           </div>
         </section>
 
+
+
+
         <br/><br/>
+
       </div>
     </div>
-
 
     <div class="certificationsBody">
       <div class="w-75 p-3 mx-auto">
@@ -97,7 +67,6 @@
         </ul>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -126,11 +95,7 @@ body {
     z-index: 1;
     padding-left: 180px;
 }
-@media only screen and (max-width: 575px) {
-    .single-timeline-area {
-        padding-left: 100px;
-    }
-}
+
 .single-timeline-area .timeline-date {
     position: absolute;
     width: 180px;
@@ -150,11 +115,7 @@ body {
     justify-content: flex-end;
     padding-right: 60px;
 }
-@media only screen and (max-width: 575px) {
-    .single-timeline-area .timeline-date {
-        width: 100px;
-    }
-}
+
 
 /* timeline line */
 .single-timeline-area .timeline-date::after {
@@ -215,7 +176,7 @@ body {
     border-radius: 15%;
     margin-right: 15px;
 }
-.single-timeline-area .single-timeline-content .timeline-icon img {
+.single-timeline-area .single-timeline-content .timeline-icon i {
     color: #ffffff;
     line-height: 30px;
 }
@@ -233,14 +194,13 @@ body {
   box-shadow: 0 0.25rem 1rem 0 rgba(100, 100, 100, 0.125);
 }
 
+.certificationsBody {
+  background-color: #2B3A55;
+  color: white;
+}
 
 h6 {
   font-family: 'opensans-regular', sans-serif;
-}
-
-.certificationsBody {
-  background-color: #2B3A55;
-  color: smokewhite;
 }
 
 
@@ -249,26 +209,36 @@ h6 {
 
 <script>
   export default {
-    name: "EducationView",
+    name: "ExperienceView",
 
     data() {
       return {
-
-        languageList: [
-          {name: "Python", rating: "5"},
-          {name: "Java", rating: "3"},
-          {name: "HTML", rating: "4"}
-        ],
-
-        skillList: [
-          {name: "Machine Learning", rating: "5"},
-          {name: "Web Development", rating: "3"},
-          {name: "HTML", rating: "4"}
+        experienceList: [
+          // {name: "Singapore Management University - TA", tenure: "2019-2023", image:"/src/assets/smuLogo.jpg", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
+          {name: "Singapore Management University - Main QC", tenure: "2019-2023", image:"/src/assets/smuLogo.jpg", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
+          // {name: "Singapore Management University - TA", tenure: "2019-2023", image:"/src/assets/smuLogo.jpg", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
+          {name: "iCompaas - Cyber Sec", tenure: "2004-2019", image:"/src/assets/icompaasLogo.jpg", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
+          {name: "BIA - DAP", tenure: "2004-2019", image:"/src/assets/biaLogo.jpg", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
         ]
       }
     },
 
     mounted() {
+
+        const divList = document.getElementsByClassName("single-timeline-content");
+        for (let i = 0; i < divList.length; i++) {
+
+          var icon = divList[i].getElementsByClassName("timeline-icon")[0];
+          icon.style.backgroundImage = 'url('+this.experienceList[i].image+')';
+
+          if(i%2==0){
+            divList[i].style.backgroundColor = "#CFD2CF";
+          }
+          else {
+            divList[i].style.backgroundColor = "#F5EDDC";
+          }
+        }
+
 
         this.widthAdjust(event);
         window.addEventListener("resize", this.widthAdjust);
@@ -295,6 +265,7 @@ h6 {
           }
         }
       }
+
     }
   }
 </script>
