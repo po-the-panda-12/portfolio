@@ -32,6 +32,8 @@
                                     <div class="single-timeline-content wow fadeInLeft" data-wow-delay="0.3s"
                                     style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                                         <div class="timeline-icon" style="background-size: cover;" aria-hidden="true">
+                                          <img :src=[school.image] alt="logo" class="timeline-icon">
+                                          <!-- <img src="@/assets/smuLogo.jpg" alt="logo" class="timeline-icon"> -->
                                           <!-- <i class="fa fa-id-card" aria-hidden="true"></i> -->
                                         </div>
                                         <div class="timeline-text">
@@ -316,7 +318,7 @@ body {
     border-radius: 15%;
     margin-right: 15px;
 }
-.single-timeline-area .single-timeline-content .timeline-icon i {
+.single-timeline-area .single-timeline-content .timeline-icon img {
     color: #ffffff;
     line-height: 30px;
 }
@@ -365,8 +367,8 @@ h6 {
     data() {
       return {
         educationList: [
-          {name: "Singapore Management University", tenure: "2019-2023", image:"/src/assets/smuLogo.jpg", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
-          {name: "La Martiniere for Girls, Kolkata", tenure: "2004-2019", image:"/src/assets/lmgLogo.jpg", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
+          {name: "Singapore Management University", tenure: "2019-2023", image:"@/assets/Profile.jpg", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
+          {name: "La Martiniere for Girls, Kolkata", tenure: "2004-2019", image:"@/assets/lmgLogo.jpg", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
         ],
 
         languageList: [
@@ -391,8 +393,8 @@ h6 {
         const divList = document.getElementsByClassName("single-timeline-content");
         for (let i = 0; i < divList.length; i++) {
 
-          var icon = divList[i].getElementsByClassName("timeline-icon")[0];
-          icon.style.backgroundImage = 'url('+this.educationList[i].image+')';
+          // var icon = divList[i].getElementsByClassName("timeline-icon")[0];
+          // icon.style.backgroundImage = 'url('+this.educationList[i].image+')';
 
           if(i%2==0){
             divList[i].style.backgroundColor = "#B4DAB4";
