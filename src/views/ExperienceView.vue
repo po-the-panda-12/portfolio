@@ -21,11 +21,20 @@
                                 <div class="col">
                                     <div class="single-timeline-content wow fadeInLeft" data-wow-delay="0.3s"
                                     style="visibility: visible; animation-delay: 0.3s; background-color:#CFD2CF; animation-name: fadeInLeft;">
+                                        <div class="mb-2">
+                                          <span class="text-light badge mr-2" style="background-color:#84758A; font-weight:400;">Quantum Computing</span>
+                                          <span class="text-light badge mr-2" style="background-color:#84758A; font-weight:400;">Python</span>
+                                          <span class="text-light badge mr-2" style="background-color:#84758A; font-weight:400;">Machine Learning</span>
+                                        </div>
                                         <div class="timeline-icon" style="background-size: cover;" aria-hidden="true">
                                           <img src="@/assets/smuLogo.jpg" alt="logo" class="timeline-icon"></div>
                                         <div class="timeline-text">
-                                            <h6 class="my-2">Singapore Management University - Main QC</h6>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <h6 class="mt-3 mb-0">SMU - School of Computing and Information Systems</h6>
+                                            <p class="mb-2" style="font-style:italic; font-size:13px">Research Intern</p>
+                                            <ul>
+                                              <li class="override">Designed algorithm for hybrid quantum Siamese neural network</li>
+                                              <li class="override">Helped in writing the research paper for findings on quantum vs classical computing</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -42,11 +51,20 @@
                                 <div class="col">
                                     <div class="single-timeline-content wow fadeInLeft" data-wow-delay="0.3s"
                                     style="visibility: visible; animation-delay: 0.3s; background-color:#F5EDDC; animation-name: fadeInLeft;">
+                                        <div class="mb-2">
+                                          <span class="badge text-light mr-2" style="background-color:#7191D6; font-weight:400;">Cybersecurity</span>
+                                          <span class="badge text-light mr-2" style="background-color:#7191D6; font-weight:400;">AWS</span>
+                                          <span class="badge text-light mr-2" style="background-color:#7191D6; font-weight:400;">Cloud Operations</span>
+                                        </div>
                                         <div class="timeline-icon" style="background-size: cover;" aria-hidden="true">
                                           <img src="@/assets/icompaasLogo.jpg" alt="logo" class="timeline-icon"></div>
                                         <div class="timeline-text">
-                                            <h6 class="my-2">iCompaas - Cyber Sec</h6>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                          <h6 class="mt-3 mb-0">iCompaas</h6>
+                                          <p class="mb-2" style="font-style:italic; font-size:13px">Cloud Operations Intern</p>
+                                          <ul>
+                                            <li class="override">Coordinated and executed AWS cloud operation remediations</li>
+                                            <li class="override">Communicated technical issues to clients without technical backgrounds</li>
+                                          </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -55,25 +73,6 @@
                           </div>
 
 
-                          <div class="single-timeline-area">
-                            <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                                <p>2017-2018</p>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="single-timeline-content wow fadeInLeft" data-wow-delay="0.3s"
-                                    style="visibility: visible; animation-delay: 0.3s; background-color:#CFD2CF; animation-name: fadeInLeft;">
-                                        <div class="timeline-icon" style="background-size: cover;" aria-hidden="true">
-                                          <img src="@/assets/biaLogo.jpg" alt="logo" class="timeline-icon"></div>
-                                        <div class="timeline-text">
-                                            <h6 class="my-2">BIA - DAP</h6>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-
-                          </div>
 
                       </div>
                   </div>
@@ -88,12 +87,81 @@
 
     <div class="certificationsBody">
       <div class="w-75 p-3 mx-auto">
-        <h2>Certifications</h2>
+        <h2 class="mt-3">Certifications</h2>
         <hr>
         <ul class="row">
-          <li class="col-12">Java Certification</li>
-          <li class="col-12">AWS training 1</li>
-          <li class="col-12">AWS training 2</li>
+          <li class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card mb-3" style="max-width:300px;">
+              <div class="row g-0">
+                <div class="col-4">
+                  <img src="@/assets/oracleLogo.jpg" class="rounded mx-auto d-block p-1" style="max-height:90px; width:90px;" alt="Oracle logo" aria-hidden="true">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h6 class="card-title mb-0" style="color:black;">Oracle Certified Foundations Associate, Java</h6>
+                    <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card mb-3" style="max-width:300px;">
+              <div class="row g-0">
+                <div class="col-4">
+                  <img src="@/assets/harvardLogo.jpg" class="rounded mx-auto d-block p-1" style="max-height:90px; width:90px;" alt="AWS logo" aria-hidden="true">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h6 class="card-title" style="color:black;">Harvard-CS50x: Introduction to Computer Science</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card mb-3" style="max-width:300px;">
+              <div class="row g-0">
+                <div class="col-4">
+                  <img src="@/assets/harvardLogo.jpg" class="rounded mx-auto d-block p-1" style="max-height:90px; width:90px;" alt="AWS logo" aria-hidden="true">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h6 class="card-title" style="color:black;">Harvard-CS50x: Introduction to Artificial Intelligence with Python</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card mb-3" style="max-width:300px;">
+              <div class="row g-0">
+                <div class="col-4">
+                  <img src="@/assets/awsLogo.jpg" class="rounded mx-auto d-block p-1" style="max-height:90px; width:100px;" alt="AWS logo" aria-hidden="true">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h6 class="card-title" style="color:black;">Introduction to AWS CloudTrail</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card mb-3" style="max-width:300px;">
+              <div class="row g-0">
+                <div class="col-4">
+                  <img src="@/assets/awsLogo.jpg" class="rounded mx-auto d-block p-1" style="max-height:90px; width:100px;" alt="AWS logo" aria-hidden="true">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h6 class="card-title" style="color:black;">AWS Cloud Practitioner Essentials</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -103,10 +171,7 @@
 
 <style>
 
-* {
-  margin: 0;
-  padding: 0;
-}
+@import '@/assets/main.css';
 
 .experienceBody {
   padding-top: 40px;
@@ -114,135 +179,11 @@
   background-size: cover;
 }
 
-body {
-    margin-top: 20px;
-}
-.timeline_area {
-    position: relative;
-    z-index: 1;
-}
-.single-timeline-area {
-    position: relative;
-    z-index: 1;
-    padding-left: 180px;
-}
-@media only screen and (max-width: 575px) {
-    .single-timeline-area {
-        padding-left: 100px;
-    }
-}
-.single-timeline-area .timeline-date {
-    position: absolute;
-    width: 180px;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -ms-grid-row-align: center;
-    align-items: center;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    padding-right: 60px;
-}
-@media only screen and (max-width: 575px) {
-    .single-timeline-area .timeline-date {
-        width: 100px;
-    }
-}
-
-/* timeline line */
-.single-timeline-area .timeline-date::after {
-    position: absolute;
-    width: 3px;
-    height: 100%;
-    content: "";
-    background-color: black;
-    top: 0;
-    right: 30px;
-    z-index: 1;
-}
-.single-timeline-area .timeline-date::before {
-    position: absolute;
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    background-color: #2B3A55;
-    content: "";
-    top: 50%;
-    right: 26px;
-    z-index: 5;
-    margin-top: -5.5px;
-}
-.single-timeline-area .timeline-date p {
-    margin-bottom: 0;
-    color: #020710;
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-/* card details */
-.single-timeline-area .single-timeline-content {
-    position: relative;
-    z-index: 1;
-    padding: 30px 30px 25px;
-    border-radius: 6px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-@media only screen and (max-width: 575px) {
-    .single-timeline-area .single-timeline-content {
-        padding: 20px;
-    }
-}
-.single-timeline-area .single-timeline-content .timeline-icon {
-    -webkit-transition-duration: 500ms;
-    transition-duration: 500ms;
-    width: 60px;
-    height: 60px;
-    background-color: #2B3A55;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 60px;
-    flex: 0 0 60px;
-    text-align: center;
-    max-width: 60px;
-    border-radius: 15%;
-    margin-right: 15px;
-}
-.single-timeline-area .single-timeline-content .timeline-icon img {
-    color: #ffffff;
-    line-height: 30px;
-}
-.single-timeline-area .single-timeline-content .timeline-text h6 {
-    -webkit-transition-duration: 500ms;
-    transition-duration: 500ms;
-}
-.single-timeline-area .single-timeline-content .timeline-text p {
-    font-size: 13px;
-    margin-bottom: 0;
-}
-
-.single-timeline-content:hover {
-  -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(100, 100, 100, 0.125);
-  box-shadow: 0 0.25rem 1rem 0 rgba(100, 100, 100, 0.125);
-}
-
-
-h6 {
-  font-family: 'opensans-regular', sans-serif;
-}
 
 .certificationsBody {
   background-color: #2B3A55;
-  color: smokewhite;
+  color: white;
 }
-
 
 
 </style>

@@ -2,16 +2,16 @@
 
   <div class="homeImage">
     <div class="banner">
-      <h1>Shambhavi Goenka
+      <h1  style="font-size:50px;">Shambhavi Goenka
         <span class = "blink">|</span>
       </h1>
-      <p>AI enthusiast</p>
+      <p  style="font-size:18px;">AI enthusiast</p>
       <hr>
       <ul>
 
         <li v-for='ref in refs' class="px-2">
           <a :href=[ref.link] target="_blank" rel="noopener noreferrer">
-            <i :class=[ref.icon] aria-hidden="true"></i>
+            <i :class=[ref.icon] aria-hidden="true"  style="font-size:28px;"></i>
           </a>
         </li>
 

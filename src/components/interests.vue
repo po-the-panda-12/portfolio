@@ -26,7 +26,7 @@
               <div class="flip-card-back">
                 <table>
                   <tr>
-                    <td style="vertical-align:middle;">{{interest.message}}</td>
+                    <td style="vertical-align:middle; color:#F5F5F5;">{{interest.message}}</td>
                   </tr>
                 </table>
               </div>
